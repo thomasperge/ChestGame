@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- === META === -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- === Link === -->
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap.css')}}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="../static/main.css" rel="stylesheet">
+
+
+    <title>Login - ChestGame Account</title>
+    <link rel="icon" type="image/png" href="../static/assets/chestlogo2.png" />
+
+    <!-- === Header Black Container === -->
+    <header class="p-2 bg-dark text-white ">
+        <div class="container">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="/" class="nav-link px-2 text-white text-center font-monospace">
+                    <img src="../static/assets/chestlogo2.png" alt="" width="32 " height="25">
+                    ChestGame - Error
+                </a></li>
+            </ul>
+        </div>
+    </header>
+</head>
+
+<!-- =========================== BODY =========================== -->
+<body class="font-monospace">
+    <!-- ===== Image Backgroung ===== -->
+    <div id="cloud-ring" class="style_cloudRing__sh41Q" style="background-image: url(&quot;https://cdn.axieinfinity.com/landing-page/_next/static/images/cloud-ring-b9996e3e8fe9b463920384977b0d854c@1x.webp&quot;); background-size: 100%; transform-origin: 50% 20%; transform: translate(-50%, 0%);"></div>
+
+        <!-- ========== SideBar ========== -->
+        <div class="sidebar">
+        <div class="logo-details">
+            <!-- class='bx bxl-c-plus-plus icon' -->
+            <img src="../static/assets/chestlogo2.png" class="icon pe-3">
+                <a href="index.html" class="text-decoration-none">
+                    <div class="logo_name">ChestGame</div>
+                </a>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+            <ul class="nav-list">
+                <li>
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Search...">
+                    <span class="tooltip2">Search</span>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <i class='bx bx-user' ></i>
+                        <span class="links_name">Login</span>
+                    </a>
+                    <span class="tooltip2">Login</span>
+                </li>
+                <li>
+                    <a href="signup.html">
+                        <i class='bx bxs-user-plus'></i>
+                        <span class="links_name">Sign up</span>
+                    </a>
+                    <span class="tooltip2">Sign up</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="links_name">Dashboard</span>
+                    </a>
+                    <span class="tooltip2">Dashboard</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-chat' ></i>
+                        <span class="links_name">Messages</span>
+                    </a>
+                    <span class="tooltip2">Messages</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-pie-chart-alt-2' ></i>
+                        <span class="links_name">Analytics</span>
+                    </a>
+                    <span class="tooltip2">Analytics</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-heart' ></i>
+                        <span class="links_name">Saved</span>
+                    </a>
+                    <span class="tooltip2">Saved</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-cog' ></i>
+                        <span class="links_name settings">Setting</span>
+                    </a>
+                    <span class="tooltip2">Setting</span>
+                </li>
+                <li class="profile">
+                    <div class="profile-details">
+                    <img src="../static/assets/chestlogo2.png" alt="profileImg">
+                        <div class="name_job">
+                            <div class="name">Thomas Kauffmant</div>
+                            <div class="job">Web designer</div>
+                        </div>
+                    </div>
+                    <i class='bx bx-log-out' id="log_out" class="LogOut"></i>
+                </li>
+            </ul>
+        </div>
+        <!-- ========== End SideBar ========== -->
+
+
+        <!-- ========== ERROR CONTAINER ========== -->
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column text-center">
+            <main class="px-3 text-white">
+              <h1>Error</h1>
+              <p class="lead">Please try again.</p>
+              <p class="lead">{{ var }}</p>
+                <p class="lead">
+
+                <!-- === SIGNUP === -->
+                <div class="d-flex gap-5 justify-content-center text-center" id="dropdownMacos">
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-macos mx-0 border-0 shadow text-center" style="width: 220px;">
+                        <!-- ======= Redirection ======= -->
+                        <a href="login.html"><button type="button" class="btn btn-light">Retry</button></a>
+                    </ul>
+                </div>
+                <!-- === END SIGNUP === -->
+
+                </p>
+            </main>
+        </div>
+        <!-- ========== END ERROR CONTAINER ========== -->
+
+    <!-- == SCRIPT == -->
+    <script src="../static/js/script.js"></script>
+    
+</body>
+</html>
